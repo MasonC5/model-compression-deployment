@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Upload an Image for Prediction</h1>
+    <form action="/predict" enctype="multipart/form-data" method="post">
+        <input name="file" type="file">
+        <input type="submit">
+    </form>
+
+    {% if result is not none %}
+        <h2>Predicted Class: {{ result }}</h2>
+    {% endif %}
+
+    <h3>Download Models:</h3>
+    <ul>
+        <li><a href="/download/baseline" download>Download Baseline Model</a></li>
+        <li><a href="/download/distilled" download>Download Distilled Model</a></li>
+    </ul>
+</body>
+</html>
