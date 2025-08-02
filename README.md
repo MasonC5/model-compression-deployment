@@ -42,7 +42,7 @@ model-compression-deployment/
 
 3. **Start app**
   ```bash
-uvicorn scripts.model_api:app --reload
+   uvicorn scripts.model_api:app --reload
   ```
 
 4. **Access Frontend**
