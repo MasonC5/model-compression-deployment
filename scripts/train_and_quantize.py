@@ -1,4 +1,4 @@
-# Step 1: Load CIFAR-10 and Preprocess
+# Load CIFAR-10 and Preprocess
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -20,7 +20,7 @@ testset = torchvision.datasets.CIFAR10(root='./data', train=False,
 testloader = torch.utils.data.DataLoader(testset, batch_size=64,
                                          shuffle=False)
 
-# Step 2: Define a Simple CNN Model
+# Define Simple CNN Model
 import torch.nn as nn
 import torch.nn.functional as F
 
